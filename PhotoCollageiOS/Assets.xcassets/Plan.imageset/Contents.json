@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon-park-solid_notes.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
