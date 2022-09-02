@@ -40,14 +40,25 @@ extension BottomSheetVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch(indexPath.row){
         case 4:
-            let picker = UIImagePickerController()
-            picker.sourceType = .camera
-            picker.delegate = self
-            present(picker, animated: true)
+            if(UIImagePickerController.isSourceTypeAvailable(.camera))
+            {
+                     let myPickerController = UIImagePickerController()
+                     myPickerController.delegate = self
+                     myPickerController.allowsEditing = true
+                     myPickerController.sourceType = .camera
+                     self.present(myPickerController, animated: true, completion: nil)
+            }
+            else
+            {
+                     let actionController: UIAlertController = UIAlertController(title: "Camera is not available",message: "", preferredStyle: .alert)
+                     let cancelAction: UIAlertAction = UIAlertAction(title: "OK", style: .cancel) { action -> Void  in
+                     }
+                     actionController.addAction(cancelAction)
+                     self.present(actionController, animated: true, completion: nil)
+            }
         default:
             print("hello")
         }
-        
     }
 }
 
@@ -60,7 +71,6 @@ extension BottomSheetVC: UIImagePickerControllerDelegate,UINavigationControllerD
         guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else{
             return
         }
-        
     }
 }
 class BottomCell: UITableViewCell{

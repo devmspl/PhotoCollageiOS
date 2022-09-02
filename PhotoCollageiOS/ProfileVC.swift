@@ -14,7 +14,11 @@ class ProfileVC: UIViewController {
 
     }
     
-
+    @IBAction func NextTapbtn(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "StoriesVC") as! StoriesVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
   
 
 }

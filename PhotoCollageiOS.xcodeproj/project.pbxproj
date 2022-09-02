@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		FA30088B28BCC5E900997047 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30088A28BCC5E900997047 /* PaymentVC.swift */; };
+		FA32761928BF6A1100138A52 /* SideNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32761828BF6A1100138A52 /* SideNavigationVC.swift */; };
 		FA39DB6728BCE61200F281BA /* BottomSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39DB6628BCE61200F281BA /* BottomSheetVC.swift */; };
 		FA4887B428BDDCD200A73BC0 /* PublishVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4887B328BDDCD200A73BC0 /* PublishVC.swift */; };
+		FA5559CA28C1EBB100F0653D /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5559C928C1EBB100F0653D /* MyApp.swift */; };
+		FA5559CC28C2147A00F0653D /* EditPhotoAndVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5559CB28C2147A00F0653D /* EditPhotoAndVideoVC.swift */; };
+		FA62D55828C0B727003AA00D /* ColorPickVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62D55728C0B727003AA00D /* ColorPickVC.swift */; };
 		FA73680928B1007700F88777 /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA73680828B1007700F88777 /* ThirdScreen.swift */; };
 		FA73680B28B100A700F88777 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA73680A28B100A700F88777 /* ProfileVC.swift */; };
 		FAB8AD9528B0AF8400E44B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8AD9428B0AF8400E44B8A /* AppDelegate.swift */; };
@@ -45,8 +49,12 @@
 
 /* Begin PBXFileReference section */
 		FA30088A28BCC5E900997047 /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
+		FA32761828BF6A1100138A52 /* SideNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNavigationVC.swift; sourceTree = "<group>"; };
 		FA39DB6628BCE61200F281BA /* BottomSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetVC.swift; sourceTree = "<group>"; };
 		FA4887B328BDDCD200A73BC0 /* PublishVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishVC.swift; sourceTree = "<group>"; };
+		FA5559C928C1EBB100F0653D /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
+		FA5559CB28C2147A00F0653D /* EditPhotoAndVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPhotoAndVideoVC.swift; sourceTree = "<group>"; };
+		FA62D55728C0B727003AA00D /* ColorPickVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickVC.swift; sourceTree = "<group>"; };
 		FA73680828B1007700F88777 /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
 		FA73680A28B100A700F88777 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		FAB8AD9128B0AF8400E44B8A /* PhotoCollageiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoCollageiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +127,10 @@
 				FAB8AD9628B0AF8400E44B8A /* SceneDelegate.swift */,
 				FAB8AD9828B0AF8400E44B8A /* ViewController.swift */,
 				FAB8AD9A28B0AF8400E44B8A /* Main.storyboard */,
+				FA5559CB28C2147A00F0653D /* EditPhotoAndVideoVC.swift */,
+				FA5559C928C1EBB100F0653D /* MyApp.swift */,
+				FA62D55728C0B727003AA00D /* ColorPickVC.swift */,
+				FA32761828BF6A1100138A52 /* SideNavigationVC.swift */,
 				FA4887B328BDDCD200A73BC0 /* PublishVC.swift */,
 				FA39DB6628BCE61200F281BA /* BottomSheetVC.swift */,
 				FA30088A28BCC5E900997047 /* PaymentVC.swift */,
@@ -286,9 +298,13 @@
 				FA73680928B1007700F88777 /* ThirdScreen.swift in Sources */,
 				FA73680B28B100A700F88777 /* ProfileVC.swift in Sources */,
 				FAB8AD9928B0AF8400E44B8A /* ViewController.swift in Sources */,
+				FA5559CC28C2147A00F0653D /* EditPhotoAndVideoVC.swift in Sources */,
 				FA30088B28BCC5E900997047 /* PaymentVC.swift in Sources */,
 				FAC491A928B8AA9D00336F15 /* StoriesVC.swift in Sources */,
 				FAB8AD9528B0AF8400E44B8A /* AppDelegate.swift in Sources */,
+				FA5559CA28C1EBB100F0653D /* MyApp.swift in Sources */,
+				FA32761928BF6A1100138A52 /* SideNavigationVC.swift in Sources */,
+				FA62D55828C0B727003AA00D /* ColorPickVC.swift in Sources */,
 				FAB8AD9728B0AF8400E44B8A /* SceneDelegate.swift in Sources */,
 				FAB8ADC728B0D59600E44B8A /* SecondScreen.swift in Sources */,
 				FA4887B428BDDCD200A73BC0 /* PublishVC.swift in Sources */,

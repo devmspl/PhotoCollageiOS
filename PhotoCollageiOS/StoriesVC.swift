@@ -16,6 +16,11 @@ class StoriesVC: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func OptionBtn(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "SideNavigationVC") as! SideNavigationVC
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 }
 extension StoriesVC: UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -41,9 +46,13 @@ extension StoriesVC: UICollectionViewDelegate,UICollectionViewDataSource{
     }
     }
 
-}
-    
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            if (collectionView == MainCollectionView){
+            let vc = storyboard?.instantiateViewController(withIdentifier: "EditPhotoAndVideoVC") as! EditPhotoAndVideoVC
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    }
 
 class abc: UICollectionViewCell{
     @IBOutlet weak var CollectionImages: UIImageView!
