@@ -13,7 +13,7 @@ class EditPhotoAndVideoVC: UIViewController {
 
     @IBOutlet weak var imagePicked: UIImageView!
     
-    let picker = IMGLYMainEditorViewController()
+//    let cameraViewController = IMGLYCameraViewController(recordingModes: [.photo, .video])
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class EditPhotoAndVideoVC: UIViewController {
     }
     
     @IBAction func EditBtn(_ sender: Any) {
-        self.present(picker, animated: true)
+//        self.present(cameraViewController, animated: true)
     }
 }
 
