@@ -1,0 +1,6 @@
+framework module Pods_PhotoCollageiOS_PhotoCollageiOSUITests {
+  umbrella header "Pods-PhotoCollageiOS-PhotoCollageiOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

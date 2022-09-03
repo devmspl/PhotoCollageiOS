@@ -6,11 +6,18 @@
 //
 
 import UIKit
+import imglyKit
+
 
 class EditPhotoAndVideoVC: UIViewController {
 
+    @IBOutlet weak var imagePicked: UIImageView!
+    
+    let picker = IMGLYMainEditorViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+     
 
     }
     @IBAction func OptionsBtn(_ sender: Any) {
@@ -18,4 +25,8 @@ class EditPhotoAndVideoVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func EditBtn(_ sender: Any) {
+        self.present(picker, animated: true)
+    }
 }
+

@@ -1570,6 +1570,18 @@ your link in Bio</string>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbA-ez-yVL">
+                                                <rect key="frame" x="157" y="602.5" width="100" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="GHB-TM-jih"/>
+                                                    <constraint firstAttribute="width" constant="100" id="Whm-kH-8lc"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="EditBtn:" destination="veN-Gy-bHw" eventType="touchUpInside" id="nlf-Gb-Y5k"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -1578,6 +1590,7 @@ your link in Bio</string>
                                             <constraint firstItem="Cnn-8M-qgV" firstAttribute="centerY" secondItem="nQD-e5-ApZ" secondAttribute="centerY" id="70w-mp-oTR"/>
                                             <constraint firstAttribute="trailing" secondItem="LNn-k0-LHC" secondAttribute="trailing" constant="20" id="7RE-UN-DTp"/>
                                             <constraint firstItem="jFf-RX-RUk" firstAttribute="leading" secondItem="sjI-y6-aaZ" secondAttribute="trailing" constant="10" id="9NG-Bc-vtg"/>
+                                            <constraint firstItem="TbA-ez-yVL" firstAttribute="top" secondItem="mMX-R8-eVH" secondAttribute="bottom" constant="30" id="9SC-8I-mAg"/>
                                             <constraint firstItem="sjI-y6-aaZ" firstAttribute="leading" secondItem="PVF-Md-ihb" secondAttribute="trailing" constant="10" id="DG1-ED-BOl"/>
                                             <constraint firstItem="sjI-y6-aaZ" firstAttribute="centerY" secondItem="jFf-RX-RUk" secondAttribute="centerY" id="Ge2-Jj-6Td"/>
                                             <constraint firstItem="Cnn-8M-qgV" firstAttribute="leading" secondItem="nQD-e5-ApZ" secondAttribute="trailing" constant="10" id="PpF-8x-Cqj"/>
@@ -1595,6 +1608,7 @@ your link in Bio</string>
                                             <constraint firstItem="fhb-mq-uSl" firstAttribute="leading" secondItem="YG4-6y-LXz" secondAttribute="leading" constant="20" id="sPM-wa-glK"/>
                                             <constraint firstItem="nQD-e5-ApZ" firstAttribute="top" secondItem="lye-dV-SP2" secondAttribute="bottom" constant="20" id="vZE-dx-I7Z"/>
                                             <constraint firstItem="PVF-Md-ihb" firstAttribute="centerY" secondItem="sjI-y6-aaZ" secondAttribute="centerY" id="vd4-U1-HHH"/>
+                                            <constraint firstItem="TbA-ez-yVL" firstAttribute="centerX" secondItem="YG4-6y-LXz" secondAttribute="centerX" id="xbj-cR-o2v"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1618,6 +1632,9 @@ your link in Bio</string>
                             <constraint firstItem="xxW-Zp-343" firstAttribute="top" secondItem="0CT-Am-2QU" secondAttribute="top" id="wZX-GY-KeL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imagePicked" destination="goV-9h-BK1" id="4SF-Vf-geY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qt4-53-Kuq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
