@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ColorPickVC: UIViewController, UIColorPickerViewControllerDelegate{
+class ColorPickVC: UIViewController, UIColorPickerViewControllerDelegate, UIGestureRecognizerDelegate{
     @IBOutlet weak var ImageView: UIView!
     @IBOutlet weak var ImageOutlet: UIImageView!
     let colorpicker = UIColorPickerViewController()
@@ -16,8 +16,14 @@ class ColorPickVC: UIViewController, UIColorPickerViewControllerDelegate{
         colorpicker.delegate = self
         colorpicker.supportsAlpha = false
         colorpicker.selectedColor = ImageView.backgroundColor ?? .black
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
 
     }
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+            return true
+        }
     
     @IBAction func ColorTapped(_ sender: Any) {
        
@@ -38,6 +44,10 @@ class ColorPickVC: UIViewController, UIColorPickerViewControllerDelegate{
     func colorPickerViewControllerDidFinish(_ viewController: UIColorPickerViewController) {
         let color = viewController.selectedColor
         ImageView.backgroundColor = color
+    }
+    @IBAction func Trialbtn(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "EditPhotoAndVideoVC") as! EditPhotoAndVideoVC
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

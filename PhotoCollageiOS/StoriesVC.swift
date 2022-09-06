@@ -7,20 +7,34 @@
 
 import UIKit
 
-class StoriesVC: UIViewController {
+class StoriesVC: UIViewController,UIGestureRecognizerDelegate {
     @IBOutlet weak var MainCollectionView: UICollectionView!
     @IBOutlet weak var SecondMainCollectionView: UICollectionView!
     @IBOutlet weak var ThirdMainCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+            return true
+        }
     
     @IBAction func OptionBtn(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "SideNavigationVC") as! SideNavigationVC
         self.present(vc, animated: true, completion: nil)
     }
+    @IBAction func PostBtn(_ sender: Any) {
+        let vc2 = storyboard?.instantiateViewController(withIdentifier: "PostVC") as! PostVC
+        self.navigationController?.pushViewController(vc2, animated: false)
+    }
     
+    @IBAction func Trialbtn(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ColorPickVC") as! ColorPickVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 extension StoriesVC: UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -48,8 +62,29 @@ extension StoriesVC: UICollectionViewDelegate,UICollectionViewDataSource{
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
             if (collectionView == MainCollectionView){
-            let vc = storyboard?.instantiateViewController(withIdentifier: "EditPhotoAndVideoVC") as! EditPhotoAndVideoVC
+            let vc = storyboard?.instantiateViewController(withIdentifier: "CollageVC2") as! CollageVC2
             self.navigationController?.pushViewController(vc, animated: true)
+        }
+        if (collectionView == SecondMainCollectionView){
+        switch(indexPath.row){
+        case 0:
+            let vc = storyboard?.instantiateViewController(withIdentifier: "CollageVC") as! CollageVC
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 1:
+            let vc = storyboard?.instantiateViewController(withIdentifier: "CollageVC2") as! CollageVC2
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 2:
+            let vc = storyboard?.instantiateViewController(withIdentifier: "CollageVC3") as! CollageVC3
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 3:
+            let vc = storyboard?.instantiateViewController(withIdentifier: "CollageVC4") as! CollageVC4
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 4:
+            let vc = storyboard?.instantiateViewController(withIdentifier: "CollageVC5") as! CollageVC5
+            self.navigationController?.pushViewController(vc, animated: true)
+        default:
+            print("hello")
+        }
         }
     }
     }
@@ -69,6 +104,3 @@ class Classico: UICollectionViewCell{
     
 }
     
-
-
-

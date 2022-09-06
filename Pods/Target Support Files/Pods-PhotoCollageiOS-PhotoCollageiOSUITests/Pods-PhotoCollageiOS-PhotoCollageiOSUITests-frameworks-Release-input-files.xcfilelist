@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-PhotoCollageiOS-PhotoCollageiOSUITests/Pods-PhotoCollageiOS-PhotoCollageiOSUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CollageView/CollageView.framework
 ${BUILT_PRODUCTS_DIR}/imglyKit2/imglyKit.framework

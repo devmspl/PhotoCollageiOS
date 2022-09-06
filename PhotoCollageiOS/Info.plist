@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Need jn hj</string>
+	<string>Need to access microphone</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Please Allow Access</string>
 	<key>NSCameraUsageDescription</key>

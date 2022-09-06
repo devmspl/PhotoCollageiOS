@@ -1,0 +1,6 @@
+framework module CollageView {
+  umbrella header "CollageView-umbrella.h"
+
+  export *
+  module * { export * }
+}
