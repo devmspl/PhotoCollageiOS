@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ub1-yP-hX1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yfU-Cz-iO3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -975,13 +975,92 @@ your link in Bio</string>
                     <view key="view" contentMode="scaleToFill" id="Bse-Jz-BPz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdh-cx-SSg">
+                                <rect key="frame" x="380" y="64" width="14" height="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="Downloads"/>
+                                <connections>
+                                    <action selector="Downloadbtn:" destination="yfU-Cz-iO3" eventType="touchUpInside" id="ZNY-jU-ZwC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfa-iY-RDL">
+                                <rect key="frame" x="20" y="64" width="11" height="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="BackBtn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFJ-EQ-AD0">
+                                <rect key="frame" x="107" y="566" width="200" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JRD-3K-qDk"/>
+                                    <constraint firstAttribute="width" constant="200" id="d8P-xI-J2h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Upload Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Uploadbtn:" destination="yfU-Cz-iO3" eventType="touchUpInside" id="RIN-1M-BqR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLLAGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIF-2h-nli">
+                                <rect key="frame" x="157" y="64" width="100.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVF-6E-58I">
+                                <rect key="frame" x="40" y="126" width="334" height="400"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sBK-fU-Hiy">
+                                        <rect key="frame" x="10" y="10" width="314" height="380"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="sBK-fU-Hiy" secondAttribute="bottom" constant="10" id="5LJ-L1-oZn"/>
+                                    <constraint firstItem="sBK-fU-Hiy" firstAttribute="leading" secondItem="LVF-6E-58I" secondAttribute="leading" constant="10" id="NzH-Rc-EZt"/>
+                                    <constraint firstItem="sBK-fU-Hiy" firstAttribute="top" secondItem="LVF-6E-58I" secondAttribute="top" constant="10" id="fik-Ek-2ki"/>
+                                    <constraint firstAttribute="trailing" secondItem="sBK-fU-Hiy" secondAttribute="trailing" constant="10" id="kPf-zO-qEi"/>
+                                    <constraint firstAttribute="height" constant="400" id="zcM-Na-4P0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nKY-ym-SuQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XIF-2h-nli" firstAttribute="centerX" secondItem="Bse-Jz-BPz" secondAttribute="centerX" id="1wC-QH-mXT"/>
+                            <constraint firstItem="xdh-cx-SSg" firstAttribute="top" secondItem="nKY-ym-SuQ" secondAttribute="top" constant="20" id="8wB-tt-bQp"/>
+                            <constraint firstItem="nKY-ym-SuQ" firstAttribute="trailing" secondItem="xdh-cx-SSg" secondAttribute="trailing" constant="20" id="AWV-32-RDe"/>
+                            <constraint firstItem="LVF-6E-58I" firstAttribute="leading" secondItem="Bse-Jz-BPz" secondAttribute="leading" constant="40" id="BWM-AZ-O5J"/>
+                            <constraint firstItem="Lfa-iY-RDL" firstAttribute="leading" secondItem="nKY-ym-SuQ" secondAttribute="leading" constant="20" id="CJb-mf-YJG"/>
+                            <constraint firstItem="XIF-2h-nli" firstAttribute="top" secondItem="nKY-ym-SuQ" secondAttribute="top" constant="20" id="F55-2p-7NE"/>
+                            <constraint firstItem="nKY-ym-SuQ" firstAttribute="trailing" secondItem="LVF-6E-58I" secondAttribute="trailing" constant="40" id="PPF-0z-ueI"/>
+                            <constraint firstItem="LVF-6E-58I" firstAttribute="top" secondItem="Lfa-iY-RDL" secondAttribute="bottom" constant="40" id="Wqu-7O-d8U"/>
+                            <constraint firstItem="HFJ-EQ-AD0" firstAttribute="top" secondItem="LVF-6E-58I" secondAttribute="bottom" constant="40" id="eN8-GM-DGu"/>
+                            <constraint firstItem="Lfa-iY-RDL" firstAttribute="centerY" secondItem="xdh-cx-SSg" secondAttribute="centerY" id="pPm-Ci-TKF"/>
+                            <constraint firstItem="HFJ-EQ-AD0" firstAttribute="centerX" secondItem="Bse-Jz-BPz" secondAttribute="centerX" id="psB-g0-bIF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="UploadImage" destination="sBK-fU-Hiy" id="Crw-GS-ebx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F9l-ik-7P8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-754" y="758"/>
+            <point key="canvasLocation" x="-755.07246376811599" y="757.36607142857144"/>
         </scene>
         <!--PostVC-->
         <scene sceneID="t1Z-1C-T2m">

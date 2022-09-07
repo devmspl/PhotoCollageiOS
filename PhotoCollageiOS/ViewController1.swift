@@ -9,66 +9,36 @@ import UIKit
 import CollageView
 
 
-class ViewController1: UIViewController {
+class ViewController1: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
 
-    let images = [UIImage(named: "SingleImage"),UIImage(named: "StoryImage")]
-
-    var collageView = CollageView(frame: .zero)
-
+    @IBOutlet weak var UploadImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.addSubview(collageView)
-
-        collageView.delegate    = self
-        collageView.dataSource  = self
     }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        collageView.frame = view.bounds
+    @IBAction func Downloadbtn(_ sender: Any) {
+        UIImageWriteToSavedPhotosAlbum(self.UploadImage.image!, nil, nil, nil)
     }
-
-    deinit {
-        collageView.delegate    = nil
-        collageView.dataSource  = nil
+    @IBAction func Uploadbtn(_ sender: Any) {
+        let vc = UIImagePickerController()
+        vc.sourceType = .photoLibrary
+        vc.delegate = self
+        vc.allowsEditing = true
+        present(vc, animated: true)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+    
 }
 
 
-
-extension ViewController1: CollageViewDataSource {
-
-    func collageViewNumberOfTotalItem(_ collageView: CollageView) -> Int {
-        return images.count
+extension ViewController1{
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")]as? UIImage{
+            UploadImage.image = image
+        }
+        picker.dismiss(animated: true, completion: nil)
     }
-
-    func collageViewNumberOfRowOrColoumn(_ collageView: CollageView) -> Int {
-
-        return 1
-    }
-
-    func collageViewLayoutDirection(_ collageView: CollageView) -> CollageViewLayoutDirection {
-
-        return .horizontal
-    }
-
-    func collageView(_ collageView: CollageView, configure itemView: CollageItemView, at index: Int) {
-
-        itemView.image = images[index]
-        itemView.layer.borderWidth = 3
-    }
-}
-
-extension ViewController1: CollageViewDelegate {
-
-    internal func collageView(_ collageView: CollageView, didSelect itemView: CollageItemView, at index: Int) {
-
-        let message = "didSelect at index:  \(index), rowIndex: \(String(describing: itemView.collageItem!.rowIndex))"
-        print(message)
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
     }
 }
