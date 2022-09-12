@@ -16,6 +16,10 @@ class SideNavigationVC: UIViewController {
         super.viewDidLoad()
 
     }
+    @IBAction func crossBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 extension SideNavigationVC: UITableViewDelegate,UITableViewDataSource{
@@ -31,6 +35,7 @@ extension SideNavigationVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
            return 70
     }
+    
 }
 
 class NavigationCell: UITableViewCell{

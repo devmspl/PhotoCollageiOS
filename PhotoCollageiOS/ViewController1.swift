@@ -18,7 +18,7 @@ class ViewController1: UIViewController, UIImagePickerControllerDelegate & UINav
 
     }
     @IBAction func Downloadbtn(_ sender: Any) {
-        UIImageWriteToSavedPhotosAlbum(self.UploadImage.image!, nil, nil, nil)
+        UIImageWriteToSavedPhotosAlbum(self.UploadImage.image!, self.UploadImage.image!, nil, nil)
     }
     @IBAction func Uploadbtn(_ sender: Any) {
         let vc = UIImagePickerController()
@@ -40,5 +40,14 @@ extension ViewController1{
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension UIView {
+    func asImage() -> UIImage {
+        let renderer = UIGraphicsImageRenderer(bounds: bounds)
+        return renderer.image { rendererContext in
+            layer.render(in: rendererContext.cgContext)
+        }
     }
 }

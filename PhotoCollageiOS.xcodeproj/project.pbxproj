@@ -12,6 +12,7 @@
 		7F2801775BEDD167A8267459 /* Pods_PhotoCollageiOS_PhotoCollageiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E36FEB11133F93DF9847832D /* Pods_PhotoCollageiOS_PhotoCollageiOSUITests.framework */; };
 		FA003E1928C71D93003EF845 /* CollageVC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA003E1828C71D93003EF845 /* CollageVC4.swift */; };
 		FA003E1B28C723B7003EF845 /* CollageVC5.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA003E1A28C723B7003EF845 /* CollageVC5.swift */; };
+		FA288F0028CB648700E6043E /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA288EFF28CB648700E6043E /* TabbarVC.swift */; };
 		FA2C0FBB28C618CA0004880A /* CollageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C0FBA28C618CA0004880A /* CollageVC.swift */; };
 		FA2C0FBD28C628950004880A /* CollageVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C0FBC28C628950004880A /* CollageVC3.swift */; };
 		FA2C0FBF28C62D4E0004880A /* CollageVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C0FBE28C62D4E0004880A /* CollageVC2.swift */; };
@@ -24,6 +25,10 @@
 		FA62D55828C0B727003AA00D /* ColorPickVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62D55728C0B727003AA00D /* ColorPickVC.swift */; };
 		FA73680928B1007700F88777 /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA73680828B1007700F88777 /* ThirdScreen.swift */; };
 		FA73680B28B100A700F88777 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA73680A28B100A700F88777 /* ProfileVC.swift */; };
+		FA80F9A928C8B91C0025BD29 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80F9A828C8B91C0025BD29 /* TestVC.swift */; };
+		FA97DE3B28CB02B400C978C7 /* ProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97DE3A28CB02B400C978C7 /* ProjectVC.swift */; };
+		FA97DE3D28CB032100C978C7 /* CreateNewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97DE3C28CB032100C978C7 /* CreateNewVC.swift */; };
+		FA97DE3F28CB038900C978C7 /* PlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97DE3E28CB038900C978C7 /* PlanVC.swift */; };
 		FAB1AF5F28C5DBCB002DD377 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1AF5E28C5DBCB002DD377 /* PostVC.swift */; };
 		FAB1AF6128C5FD9A002DD377 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1AF6028C5FD99002DD377 /* ViewController1.swift */; };
 		FAB8AD9528B0AF8400E44B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8AD9428B0AF8400E44B8A /* AppDelegate.swift */; };
@@ -37,6 +42,7 @@
 		FAB8ADB828B0AF8700E44B8A /* PhotoCollageiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8ADB728B0AF8700E44B8A /* PhotoCollageiOSUITestsLaunchTests.swift */; };
 		FAB8ADC528B0D3DD00E44B8A /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8ADC428B0D3DD00E44B8A /* FirstScreen.swift */; };
 		FAB8ADC728B0D59600E44B8A /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8ADC628B0D59600E44B8A /* SecondScreen.swift */; };
+		FAC2F01728CB05270070CD3E /* FavouriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2F01628CB05270070CD3E /* FavouriteVC.swift */; };
 		FAC491A928B8AA9D00336F15 /* StoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC491A828B8AA9D00336F15 /* StoriesVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +75,7 @@
 		EA73BB855155B53A2809C291 /* Pods-PhotoCollageiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollageiOS.release.xcconfig"; path = "Target Support Files/Pods-PhotoCollageiOS/Pods-PhotoCollageiOS.release.xcconfig"; sourceTree = "<group>"; };
 		FA003E1828C71D93003EF845 /* CollageVC4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageVC4.swift; sourceTree = "<group>"; };
 		FA003E1A28C723B7003EF845 /* CollageVC5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageVC5.swift; sourceTree = "<group>"; };
+		FA288EFF28CB648700E6043E /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
 		FA2C0FBA28C618CA0004880A /* CollageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageVC.swift; sourceTree = "<group>"; };
 		FA2C0FBC28C628950004880A /* CollageVC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageVC3.swift; sourceTree = "<group>"; };
 		FA2C0FBE28C62D4E0004880A /* CollageVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageVC2.swift; sourceTree = "<group>"; };
@@ -81,6 +88,10 @@
 		FA62D55728C0B727003AA00D /* ColorPickVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickVC.swift; sourceTree = "<group>"; };
 		FA73680828B1007700F88777 /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
 		FA73680A28B100A700F88777 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		FA80F9A828C8B91C0025BD29 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		FA97DE3A28CB02B400C978C7 /* ProjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectVC.swift; sourceTree = "<group>"; };
+		FA97DE3C28CB032100C978C7 /* CreateNewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewVC.swift; sourceTree = "<group>"; };
+		FA97DE3E28CB038900C978C7 /* PlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanVC.swift; sourceTree = "<group>"; };
 		FAB1AF5E28C5DBCB002DD377 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		FAB1AF6028C5FD99002DD377 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		FAB8AD9128B0AF8400E44B8A /* PhotoCollageiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoCollageiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +109,7 @@
 		FAB8ADB728B0AF8700E44B8A /* PhotoCollageiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollageiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FAB8ADC428B0D3DD00E44B8A /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		FAB8ADC628B0D59600E44B8A /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
+		FAC2F01628CB05270070CD3E /* FavouriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVC.swift; sourceTree = "<group>"; };
 		FAC491A828B8AA9D00336F15 /* StoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,7 +192,13 @@
 				FAB8AD9428B0AF8400E44B8A /* AppDelegate.swift */,
 				FAB8AD9628B0AF8400E44B8A /* SceneDelegate.swift */,
 				FAB8AD9828B0AF8400E44B8A /* ViewController.swift */,
+				FA288EFF28CB648700E6043E /* TabbarVC.swift */,
 				FAB8AD9A28B0AF8400E44B8A /* Main.storyboard */,
+				FAC2F01628CB05270070CD3E /* FavouriteVC.swift */,
+				FA97DE3E28CB038900C978C7 /* PlanVC.swift */,
+				FA97DE3C28CB032100C978C7 /* CreateNewVC.swift */,
+				FA97DE3A28CB02B400C978C7 /* ProjectVC.swift */,
+				FA80F9A828C8B91C0025BD29 /* TestVC.swift */,
 				FA003E1A28C723B7003EF845 /* CollageVC5.swift */,
 				FA003E1828C71D93003EF845 /* CollageVC4.swift */,
 				FA2C0FBE28C62D4E0004880A /* CollageVC2.swift */,
@@ -465,13 +483,17 @@
 			files = (
 				FAB8ADC528B0D3DD00E44B8A /* FirstScreen.swift in Sources */,
 				FA2C0FBF28C62D4E0004880A /* CollageVC2.swift in Sources */,
+				FA288F0028CB648700E6043E /* TabbarVC.swift in Sources */,
 				FA2C0FBD28C628950004880A /* CollageVC3.swift in Sources */,
 				FA73680928B1007700F88777 /* ThirdScreen.swift in Sources */,
 				FA73680B28B100A700F88777 /* ProfileVC.swift in Sources */,
+				FA80F9A928C8B91C0025BD29 /* TestVC.swift in Sources */,
 				FAB8AD9928B0AF8400E44B8A /* ViewController.swift in Sources */,
+				FA97DE3F28CB038900C978C7 /* PlanVC.swift in Sources */,
 				FA5559CC28C2147A00F0653D /* EditPhotoAndVideoVC.swift in Sources */,
 				FAB1AF6128C5FD9A002DD377 /* ViewController1.swift in Sources */,
 				FA30088B28BCC5E900997047 /* PaymentVC.swift in Sources */,
+				FA97DE3B28CB02B400C978C7 /* ProjectVC.swift in Sources */,
 				FAB1AF5F28C5DBCB002DD377 /* PostVC.swift in Sources */,
 				FAC491A928B8AA9D00336F15 /* StoriesVC.swift in Sources */,
 				FAB8AD9528B0AF8400E44B8A /* AppDelegate.swift in Sources */,
@@ -481,10 +503,12 @@
 				FA2C0FBB28C618CA0004880A /* CollageVC.swift in Sources */,
 				FA62D55828C0B727003AA00D /* ColorPickVC.swift in Sources */,
 				FAB8AD9728B0AF8400E44B8A /* SceneDelegate.swift in Sources */,
+				FA97DE3D28CB032100C978C7 /* CreateNewVC.swift in Sources */,
 				FA003E1B28C723B7003EF845 /* CollageVC5.swift in Sources */,
 				FAB8ADC728B0D59600E44B8A /* SecondScreen.swift in Sources */,
 				FA4887B428BDDCD200A73BC0 /* PublishVC.swift in Sources */,
 				FA39DB6728BCE61200F281BA /* BottomSheetVC.swift in Sources */,
+				FAC2F01728CB05270070CD3E /* FavouriteVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,6 @@
 import UIKit
 
 enum SelectedImage: String{
-    
     case Image1
     case Image2
     case Image3
@@ -19,11 +18,13 @@ class CollageVC2: UIViewController, UIImagePickerControllerDelegate,UINavigation
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var image3: UIImageView!
     
+    @IBOutlet weak var MainCollageView: UIView!
+    
     var selectedImage = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+   
     }
     
     @IBAction func BAckbtn(_ sender: Any) {
@@ -56,6 +57,11 @@ class CollageVC2: UIViewController, UIImagePickerControllerDelegate,UINavigation
         present(vc3, animated: true)
     }
     
+    @IBAction func downloadBtn(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "TestVC") as! TestVC
+        vc.imf = UIImage.init(view: MainCollageView)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 
@@ -73,14 +79,23 @@ extension CollageVC2{
             default:
                break
             }
-            
-           
         }
-        
         picker.dismiss(animated: true, completion: nil)
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
+}
+
+extension UIImage{
+    convenience init(view: UIView) {
+
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.isOpaque, 0.0)
+        view.drawHierarchy(in: view.bounds, afterScreenUpdates: false)
+    let image = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+        self.init(cgImage: (image?.cgImage)!)
+
+  }
 }
 

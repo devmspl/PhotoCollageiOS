@@ -9,6 +9,7 @@ import UIKit
 
 class CollageVC5: UIViewController {
     @IBOutlet weak var Footballtext: UILabel!
+    @IBOutlet weak var Collage5View: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +18,11 @@ class CollageVC5: UIViewController {
     }
     @IBAction func Backbtn(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func downloadBtn(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "TestVC") as! TestVC
+        vc.imf = UIImage.init(view: Collage5View)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
