@@ -31,6 +31,9 @@
 		FA97DE3F28CB038900C978C7 /* PlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97DE3E28CB038900C978C7 /* PlanVC.swift */; };
 		FAB1AF5F28C5DBCB002DD377 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1AF5E28C5DBCB002DD377 /* PostVC.swift */; };
 		FAB1AF6128C5FD9A002DD377 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1AF6028C5FD99002DD377 /* ViewController1.swift */; };
+		FAB4B45428D056BD00868B64 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4B45328D056BD00868B64 /* LoginVC.swift */; };
+		FAB4B45628D0974200868B64 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4B45528D0974200868B64 /* AccountVC.swift */; };
+		FAB4B45828D0B5D900868B64 /* CreatorBottomSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4B45728D0B5D800868B64 /* CreatorBottomSheetVC.swift */; };
 		FAB8AD9528B0AF8400E44B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8AD9428B0AF8400E44B8A /* AppDelegate.swift */; };
 		FAB8AD9728B0AF8400E44B8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8AD9628B0AF8400E44B8A /* SceneDelegate.swift */; };
 		FAB8AD9928B0AF8400E44B8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8AD9828B0AF8400E44B8A /* ViewController.swift */; };
@@ -94,6 +97,9 @@
 		FA97DE3E28CB038900C978C7 /* PlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanVC.swift; sourceTree = "<group>"; };
 		FAB1AF5E28C5DBCB002DD377 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		FAB1AF6028C5FD99002DD377 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		FAB4B45328D056BD00868B64 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		FAB4B45528D0974200868B64 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		FAB4B45728D0B5D800868B64 /* CreatorBottomSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorBottomSheetVC.swift; sourceTree = "<group>"; };
 		FAB8AD9128B0AF8400E44B8A /* PhotoCollageiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoCollageiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB8AD9428B0AF8400E44B8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB8AD9628B0AF8400E44B8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +200,9 @@
 				FAB8AD9828B0AF8400E44B8A /* ViewController.swift */,
 				FA288EFF28CB648700E6043E /* TabbarVC.swift */,
 				FAB8AD9A28B0AF8400E44B8A /* Main.storyboard */,
+				FAB4B45728D0B5D800868B64 /* CreatorBottomSheetVC.swift */,
+				FAB4B45528D0974200868B64 /* AccountVC.swift */,
+				FAB4B45328D056BD00868B64 /* LoginVC.swift */,
 				FAC2F01628CB05270070CD3E /* FavouriteVC.swift */,
 				FA97DE3E28CB038900C978C7 /* PlanVC.swift */,
 				FA97DE3C28CB032100C978C7 /* CreateNewVC.swift */,
@@ -481,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB4B45828D0B5D900868B64 /* CreatorBottomSheetVC.swift in Sources */,
 				FAB8ADC528B0D3DD00E44B8A /* FirstScreen.swift in Sources */,
 				FA2C0FBF28C62D4E0004880A /* CollageVC2.swift in Sources */,
 				FA288F0028CB648700E6043E /* TabbarVC.swift in Sources */,
@@ -497,6 +507,7 @@
 				FAB1AF5F28C5DBCB002DD377 /* PostVC.swift in Sources */,
 				FAC491A928B8AA9D00336F15 /* StoriesVC.swift in Sources */,
 				FAB8AD9528B0AF8400E44B8A /* AppDelegate.swift in Sources */,
+				FAB4B45428D056BD00868B64 /* LoginVC.swift in Sources */,
 				FA5559CA28C1EBB100F0653D /* MyApp.swift in Sources */,
 				FA003E1928C71D93003EF845 /* CollageVC4.swift in Sources */,
 				FA32761928BF6A1100138A52 /* SideNavigationVC.swift in Sources */,
@@ -506,6 +517,7 @@
 				FA97DE3D28CB032100C978C7 /* CreateNewVC.swift in Sources */,
 				FA003E1B28C723B7003EF845 /* CollageVC5.swift in Sources */,
 				FAB8ADC728B0D59600E44B8A /* SecondScreen.swift in Sources */,
+				FAB4B45628D0974200868B64 /* AccountVC.swift in Sources */,
 				FA4887B428BDDCD200A73BC0 /* PublishVC.swift in Sources */,
 				FA39DB6728BCE61200F281BA /* BottomSheetVC.swift in Sources */,
 				FAC2F01728CB05270070CD3E /* FavouriteVC.swift in Sources */,

@@ -31,10 +31,11 @@ class StoriesVC: UIViewController,UIGestureRecognizerDelegate {
         self.navigationController?.pushViewController(vc2, animated: false)
     }
     
-    @IBAction func Trialbtn(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "ColorPickVC") as! ColorPickVC
+    @IBAction func trialBtn(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "PaymentVC") as! PaymentVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
 }
 extension StoriesVC: UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -62,7 +63,7 @@ extension StoriesVC: UICollectionViewDelegate,UICollectionViewDataSource{
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
             if (collectionView == MainCollectionView){
-            let vc = storyboard?.instantiateViewController(withIdentifier: "CollageVC2") as! CollageVC2
+            let vc = storyboard?.instantiateViewController(withIdentifier: "ColorPickVC") as! ColorPickVC
             self.navigationController?.pushViewController(vc, animated: true)
         }
         if (collectionView == SecondMainCollectionView){
