@@ -42,6 +42,14 @@ class CreateBioVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
         let vc = storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    @IBAction func trialBtn(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "PaymentVC") as! PaymentVC
+        self.present(vc, animated: true)
+    }
+    @IBAction func optionBtn(_ sender: Any) {
+        let vc2 = storyboard?.instantiateViewController(withIdentifier: "SideNavigationVC") as! SideNavigationVC
+        self.present(vc2, animated: true)
+    }
     
 }
 

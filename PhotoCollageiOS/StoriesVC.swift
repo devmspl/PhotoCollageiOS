@@ -30,12 +30,13 @@ class StoriesVC: UIViewController,UIGestureRecognizerDelegate {
         self.present(vc, animated: true, completion: nil)
     }
     @IBAction func PostBtn(_ sender: Any) {
-       
+        let vc = storyboard?.instantiateViewController(withIdentifier: "PostVC") as! PostVC
+        self.navigationController?.pushViewController(vc, animated: false)
     }
     
     @IBAction func trialBtn(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "PaymentVC") as! PaymentVC
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.present(vc, animated: true)
     }
     
 }
