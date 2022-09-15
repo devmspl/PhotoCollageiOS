@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		00724B47B6C92F54565715B5 /* Pods_PhotoCollageiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2D9DE6076F51BA04E98884 /* Pods_PhotoCollageiOSTests.framework */; };
 		5CA7124DBE34700AE9F5DE18 /* Pods_PhotoCollageiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9620DC7F19C0EA01884098B7 /* Pods_PhotoCollageiOS.framework */; };
+		7669798228D1FA20008E7A14 /* Project1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669798128D1FA20008E7A14 /* Project1VC.swift */; };
+		7669798428D2057A008E7A14 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669798328D2057A008E7A14 /* SignUpVC.swift */; };
 		7F2801775BEDD167A8267459 /* Pods_PhotoCollageiOS_PhotoCollageiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E36FEB11133F93DF9847832D /* Pods_PhotoCollageiOS_PhotoCollageiOSUITests.framework */; };
 		FA003E1928C71D93003EF845 /* CollageVC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA003E1828C71D93003EF845 /* CollageVC4.swift */; };
 		FA003E1B28C723B7003EF845 /* CollageVC5.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA003E1A28C723B7003EF845 /* CollageVC5.swift */; };
+		FA018C5E28D2FDE0006A39BD /* CreateBioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA018C5D28D2FDE0006A39BD /* CreateBioVC.swift */; };
 		FA288F0028CB648700E6043E /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA288EFF28CB648700E6043E /* TabbarVC.swift */; };
 		FA2C0FBB28C618CA0004880A /* CollageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C0FBA28C618CA0004880A /* CollageVC.swift */; };
 		FA2C0FBD28C628950004880A /* CollageVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C0FBC28C628950004880A /* CollageVC3.swift */; };
@@ -71,6 +74,8 @@
 		2A5DBC16152352817D8D85B8 /* Pods-PhotoCollageiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollageiOSTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoCollageiOSTests/Pods-PhotoCollageiOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		382D2EB0108E127752DE13FF /* Pods-PhotoCollageiOS-PhotoCollageiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollageiOS-PhotoCollageiOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoCollageiOS-PhotoCollageiOSUITests/Pods-PhotoCollageiOS-PhotoCollageiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B60C9A05B297AC56B39FD30 /* Pods-PhotoCollageiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollageiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoCollageiOSTests/Pods-PhotoCollageiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7669798128D1FA20008E7A14 /* Project1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project1VC.swift; sourceTree = "<group>"; };
+		7669798328D2057A008E7A14 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		9620DC7F19C0EA01884098B7 /* Pods_PhotoCollageiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoCollageiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60E2B90A5A2F6FE090267EB /* Pods-PhotoCollageiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollageiOS.debug.xcconfig"; path = "Target Support Files/Pods-PhotoCollageiOS/Pods-PhotoCollageiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DFD7D8E309149E9899947262 /* Pods-PhotoCollageiOS-PhotoCollageiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollageiOS-PhotoCollageiOSUITests.release.xcconfig"; path = "Target Support Files/Pods-PhotoCollageiOS-PhotoCollageiOSUITests/Pods-PhotoCollageiOS-PhotoCollageiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 		EA73BB855155B53A2809C291 /* Pods-PhotoCollageiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollageiOS.release.xcconfig"; path = "Target Support Files/Pods-PhotoCollageiOS/Pods-PhotoCollageiOS.release.xcconfig"; sourceTree = "<group>"; };
 		FA003E1828C71D93003EF845 /* CollageVC4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageVC4.swift; sourceTree = "<group>"; };
 		FA003E1A28C723B7003EF845 /* CollageVC5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageVC5.swift; sourceTree = "<group>"; };
+		FA018C5D28D2FDE0006A39BD /* CreateBioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBioVC.swift; sourceTree = "<group>"; };
 		FA288EFF28CB648700E6043E /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
 		FA2C0FBA28C618CA0004880A /* CollageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageVC.swift; sourceTree = "<group>"; };
 		FA2C0FBC28C628950004880A /* CollageVC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageVC3.swift; sourceTree = "<group>"; };
@@ -200,6 +206,7 @@
 				FAB8AD9828B0AF8400E44B8A /* ViewController.swift */,
 				FA288EFF28CB648700E6043E /* TabbarVC.swift */,
 				FAB8AD9A28B0AF8400E44B8A /* Main.storyboard */,
+				FA018C5D28D2FDE0006A39BD /* CreateBioVC.swift */,
 				FAB4B45728D0B5D800868B64 /* CreatorBottomSheetVC.swift */,
 				FAB4B45528D0974200868B64 /* AccountVC.swift */,
 				FAB4B45328D056BD00868B64 /* LoginVC.swift */,
@@ -230,6 +237,8 @@
 				FAB8AD9D28B0AF8600E44B8A /* Assets.xcassets */,
 				FAB8AD9F28B0AF8600E44B8A /* LaunchScreen.storyboard */,
 				FAB8ADA228B0AF8600E44B8A /* Info.plist */,
+				7669798128D1FA20008E7A14 /* Project1VC.swift */,
+				7669798328D2057A008E7A14 /* SignUpVC.swift */,
 			);
 			path = PhotoCollageiOS;
 			sourceTree = "<group>";
@@ -502,6 +511,7 @@
 				FA97DE3F28CB038900C978C7 /* PlanVC.swift in Sources */,
 				FA5559CC28C2147A00F0653D /* EditPhotoAndVideoVC.swift in Sources */,
 				FAB1AF6128C5FD9A002DD377 /* ViewController1.swift in Sources */,
+				7669798228D1FA20008E7A14 /* Project1VC.swift in Sources */,
 				FA30088B28BCC5E900997047 /* PaymentVC.swift in Sources */,
 				FA97DE3B28CB02B400C978C7 /* ProjectVC.swift in Sources */,
 				FAB1AF5F28C5DBCB002DD377 /* PostVC.swift in Sources */,
@@ -514,6 +524,8 @@
 				FA2C0FBB28C618CA0004880A /* CollageVC.swift in Sources */,
 				FA62D55828C0B727003AA00D /* ColorPickVC.swift in Sources */,
 				FAB8AD9728B0AF8400E44B8A /* SceneDelegate.swift in Sources */,
+				FA018C5E28D2FDE0006A39BD /* CreateBioVC.swift in Sources */,
+				7669798428D2057A008E7A14 /* SignUpVC.swift in Sources */,
 				FA97DE3D28CB032100C978C7 /* CreateNewVC.swift in Sources */,
 				FA003E1B28C723B7003EF845 /* CollageVC5.swift in Sources */,
 				FAB8ADC728B0D59600E44B8A /* SecondScreen.swift in Sources */,

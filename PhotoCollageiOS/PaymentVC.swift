@@ -23,7 +23,9 @@ class PaymentVC: UIViewController,UIGestureRecognizerDelegate {
     
     @IBAction func Crossbtn(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
+    
     
   
 

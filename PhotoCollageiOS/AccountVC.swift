@@ -13,8 +13,7 @@ class AccountVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
 
     @IBOutlet weak var myPage: UIPageControl!
     var Accountimages = [UIImage(named: "FRT"),UIImage(named: "instagram-3"),UIImage(named: "Calendar-1")]
-//    var Accountimages:[String] = ["FRT","instagram-3","Calendar-1"]
-//    var currentPage:Int=0
+    var Accountlabel = ["Plan and orgnize your Instagram Feed","Write your captions in advance","Schedule your posts to publish when you want"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +31,7 @@ class AccountVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = MainCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! accountCell
         cell.cellImages.image = Accountimages[indexPath.row]
+        cell.cellLabel.text = Accountlabel[indexPath.row]
         return cell
     }
 
@@ -39,6 +39,15 @@ class AccountVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
         let vc = storyboard?.instantiateViewController(withIdentifier: "CreatorBottomSheetVC") as! CreatorBottomSheetVC;
         self.present(vc, animated: true)
     }
+    @IBAction func tryplusBtn(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "PaymentVC") as! PaymentVC
+        self.present(vc, animated: true)
+    }
+    @IBAction func optionBtn(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "SideNavigationVC") as! SideNavigationVC
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 }
 
 

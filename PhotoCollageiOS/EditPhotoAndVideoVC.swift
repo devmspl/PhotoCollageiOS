@@ -33,6 +33,9 @@ class EditPhotoAndVideoVC: UIViewController,UIGestureRecognizerDelegate {
     @IBAction func EditBtn(_ sender: Any) {
 //        self.present(cameraViewController, animated: true)
     }
+    @IBAction func backtapped(_ sender:UIButton){
+        self.navigationController?.popViewController(animated: true)
+    }
     @IBAction func Trialbtn(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "PublishVC") as! PublishVC
         self.navigationController?.pushViewController(vc, animated: true)

@@ -72,7 +72,8 @@ extension BottomSheetVC: UITableViewDelegate,UITableViewDataSource{
         case 4:
             self.present(cameraViewController, animated: true)
         default:
-            print("hello")
+            self.alert(message: "Functionality not developed yet")
+//            print("hello")
         }
         
     }

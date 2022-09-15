@@ -24,9 +24,13 @@ class PublishVC: UIViewController,UIGestureRecognizerDelegate {
         let vc = storyboard?.instantiateViewController(withIdentifier: "BottomSheetVC") as! BottomSheetVC
         self.present(vc, animated: true, completion: nil)
     }
+    @IBAction func backBtnTapped(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func Trialbtn(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "PaymentVC") as! PaymentVC
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.present(vc, animated: true)
     }
     
 }

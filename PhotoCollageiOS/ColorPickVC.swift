@@ -49,6 +49,9 @@ class ColorPickVC: UIViewController, UIColorPickerViewControllerDelegate, UIGest
         let vc = storyboard?.instantiateViewController(withIdentifier: "EditPhotoAndVideoVC") as! EditPhotoAndVideoVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    @IBAction func backTapped(_sender: UIButton){
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 extension ColorPickVC:UIImagePickerControllerDelegate, UINavigationControllerDelegate{

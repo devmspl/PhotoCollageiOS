@@ -12,6 +12,9 @@ class StoriesVC: UIViewController,UIGestureRecognizerDelegate {
     @IBOutlet weak var SecondMainCollectionView: UICollectionView!
     @IBOutlet weak var ThirdMainCollectionView: UICollectionView!
     
+    var story = [UIImage(named: "GroupImages"),UIImage(named: "story1"),UIImage(named: "story2"),UIImage(named: "GroupImages"),UIImage(named: "story1"),UIImage(named: "story2"),]
+    var storylabel = ["Alone","Love","Wedding","Alone","Love","Wedding"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
@@ -27,8 +30,7 @@ class StoriesVC: UIViewController,UIGestureRecognizerDelegate {
         self.present(vc, animated: true, completion: nil)
     }
     @IBAction func PostBtn(_ sender: Any) {
-        let vc2 = storyboard?.instantiateViewController(withIdentifier: "PostVC") as! PostVC
-        self.navigationController?.pushViewController(vc2, animated: false)
+       
     }
     
     @IBAction func trialBtn(_ sender: Any) {
@@ -40,7 +42,7 @@ class StoriesVC: UIViewController,UIGestureRecognizerDelegate {
 extension StoriesVC: UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if (collectionView == MainCollectionView){
-            return 10
+            return story.count
         }else if (collectionView == ThirdMainCollectionView){
             return 10
         }else{
@@ -51,6 +53,8 @@ extension StoriesVC: UICollectionViewDelegate,UICollectionViewDataSource{
        
         if (collectionView == MainCollectionView){
             let cell2 = MainCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! abc
+            cell2.CollectionImages.image = story[indexPath.row]
+            cell2.collectionLabel.text = storylabel[indexPath.row]
             return cell2
         }else if (collectionView == ThirdMainCollectionView){
             let cell3 = ThirdMainCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! Classico
@@ -63,8 +67,8 @@ extension StoriesVC: UICollectionViewDelegate,UICollectionViewDataSource{
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
             if (collectionView == MainCollectionView){
-            let vc = storyboard?.instantiateViewController(withIdentifier: "ColorPickVC") as! ColorPickVC
-            self.navigationController?.pushViewController(vc, animated: true)
+//            let vc = storyboard?.instantiateViewController(withIdentifier: "StoriesVC") as! StoriesVC
+//            self.navigationController?.pushViewController(vc, animated: true)
         }
         if (collectionView == SecondMainCollectionView){
         switch(indexPath.row){
@@ -92,6 +96,7 @@ extension StoriesVC: UICollectionViewDelegate,UICollectionViewDataSource{
 
 class abc: UICollectionViewCell{
     @IBOutlet weak var CollectionImages: UIImageView!
+    @IBOutlet weak var collectionLabel: UILabel!
     
 }
 

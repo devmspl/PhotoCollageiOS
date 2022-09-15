@@ -14,10 +14,17 @@ class PostVC: UIViewController{
     }
     
     @IBAction func StoriesBtn(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "StoriesVC") as! StoriesVC
-        self.navigationController?.pushViewController(vc, animated: false)
+        self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func trialTapped(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "PaymentVC") as! PaymentVC
+        self.present(vc, animated: true)
+    }
     
-
+    @IBAction func sideMenu(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "SideNavigationVC") as! SideNavigationVC
+        self.present(vc, animated: true)
+    }
+   
 }
