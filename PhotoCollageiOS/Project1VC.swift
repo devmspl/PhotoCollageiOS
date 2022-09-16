@@ -30,11 +30,17 @@ class Project1VC: UIViewController,UICollectionViewDelegate,UICollectionViewData
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: projectCollection.frame.width/2.1, height: projectCollection.frame.height/2.2)
+        return CGSize(width: projectCollection.frame.width/2.0, height: projectCollection.frame.height/2.2)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.alert(message: "Functionality not developed yet")
     }
+    
+    @IBAction func optionBtn(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "SideNavigationVC") as! SideNavigationVC
+        self.present(vc, animated: true)
+    }
+    
 }
 
 class projectCollectionCell:UICollectionViewCell{

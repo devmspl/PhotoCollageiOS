@@ -52,6 +52,12 @@ class ColorPickVC: UIViewController, UIColorPickerViewControllerDelegate, UIGest
     @IBAction func backTapped(_sender: UIButton){
         self.navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func storiesBtn(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "Story_PostVC") as! Story_PostVC
+        self.navigationController?.pushViewController(vc, animated: false)
+    }
+    
 }
 
 extension ColorPickVC:UIImagePickerControllerDelegate, UINavigationControllerDelegate{
