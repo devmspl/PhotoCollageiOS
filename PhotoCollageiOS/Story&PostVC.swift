@@ -96,6 +96,7 @@ class storyTableCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewD
         let story = UIStoryboard(name: "Main", bundle: nil)
         let vc = story.instantiateViewController(withIdentifier: "CollageVC") as! CollageVC
         parentViewController?.navigationController?.pushViewController(vc, animated: true)
+        
         switch(indexPath.row){
         case 1:
             let vc = story.instantiateViewController(withIdentifier: "CollageVC2") as! CollageVC2

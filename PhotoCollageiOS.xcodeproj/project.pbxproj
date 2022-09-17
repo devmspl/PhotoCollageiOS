@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00724B47B6C92F54565715B5 /* Pods_PhotoCollageiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2D9DE6076F51BA04E98884 /* Pods_PhotoCollageiOSTests.framework */; };
+		287D6D3428D5939800085A9F /* StoriesVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D6D3328D5939700085A9F /* StoriesVC2.swift */; };
 		28AAF3AB28D4494E00B43EBF /* Story&PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF3AA28D4494E00B43EBF /* Story&PostVC.swift */; };
 		5CA7124DBE34700AE9F5DE18 /* Pods_PhotoCollageiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9620DC7F19C0EA01884098B7 /* Pods_PhotoCollageiOS.framework */; };
 		7669798228D1FA20008E7A14 /* Project1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669798128D1FA20008E7A14 /* Project1VC.swift */; };
@@ -72,6 +73,7 @@
 
 /* Begin PBXFileReference section */
 		1A2D9DE6076F51BA04E98884 /* Pods_PhotoCollageiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoCollageiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		287D6D3328D5939700085A9F /* StoriesVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesVC2.swift; sourceTree = "<group>"; };
 		28AAF3AA28D4494E00B43EBF /* Story&PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Story&PostVC.swift"; sourceTree = "<group>"; };
 		2A5DBC16152352817D8D85B8 /* Pods-PhotoCollageiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollageiOSTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoCollageiOSTests/Pods-PhotoCollageiOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		382D2EB0108E127752DE13FF /* Pods-PhotoCollageiOS-PhotoCollageiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollageiOS-PhotoCollageiOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoCollageiOS-PhotoCollageiOSUITests/Pods-PhotoCollageiOS-PhotoCollageiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				FAB8AD9828B0AF8400E44B8A /* ViewController.swift */,
 				FA288EFF28CB648700E6043E /* TabbarVC.swift */,
 				FAB8AD9A28B0AF8400E44B8A /* Main.storyboard */,
+				287D6D3328D5939700085A9F /* StoriesVC2.swift */,
 				28AAF3AA28D4494E00B43EBF /* Story&PostVC.swift */,
 				FA018C5D28D2FDE0006A39BD /* CreateBioVC.swift */,
 				FAB4B45728D0B5D800868B64 /* CreatorBottomSheetVC.swift */,
@@ -521,6 +524,7 @@
 				FAB1AF5F28C5DBCB002DD377 /* PostVC.swift in Sources */,
 				FAC491A928B8AA9D00336F15 /* StoriesVC.swift in Sources */,
 				FAB8AD9528B0AF8400E44B8A /* AppDelegate.swift in Sources */,
+				287D6D3428D5939800085A9F /* StoriesVC2.swift in Sources */,
 				FAB4B45428D056BD00868B64 /* LoginVC.swift in Sources */,
 				FA5559CA28C1EBB100F0653D /* MyApp.swift in Sources */,
 				FA003E1928C71D93003EF845 /* CollageVC4.swift in Sources */,
