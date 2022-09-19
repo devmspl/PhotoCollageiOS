@@ -8,6 +8,7 @@ target 'PhotoCollageiOS' do
   # Pods for PhotoCollageiOS
          pod 'imglyKit2'
          pod 'CollageView'
+         pod "DarkModeKit"
 
   target 'PhotoCollageiOSTests' do
     inherit! :search_paths

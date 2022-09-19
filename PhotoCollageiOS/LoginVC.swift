@@ -30,4 +30,9 @@ class LoginVC: UIViewController {
         let url = "https://www.facebook.com/"
               UIApplication.shared.open(URL(string: url)!)
     }
+    @IBAction func backBtn(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
 }

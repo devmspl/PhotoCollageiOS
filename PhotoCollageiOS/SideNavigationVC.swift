@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import DarkModeKit
 
 class SideNavigationVC: UIViewController {
     @IBOutlet weak var SideNavigationMainView: UITableView!
@@ -19,7 +20,27 @@ class SideNavigationVC: UIViewController {
     @IBAction func crossBtn(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    @IBAction func dismissBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
+    
+    @IBAction func switchBtn(_ sender: UISwitch) {
+        
+        if #available(iOS 13.0, *) {
+            let appDelegate = UIApplication.shared.windows.first
+            
+            if sender.isOn {
+                appDelegate?.overrideUserInterfaceStyle = .dark
+                return
+            }
+            
+            appDelegate?.overrideUserInterfaceStyle = .light
+            return
+        }else{
+            // Hello
+        }
+    }
 }
 
 extension SideNavigationVC: UITableViewDelegate,UITableViewDataSource{

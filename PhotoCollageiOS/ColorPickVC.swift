@@ -10,6 +10,13 @@ import UIKit
 class ColorPickVC: UIViewController, UIColorPickerViewControllerDelegate, UIGestureRecognizerDelegate{
     @IBOutlet weak var ImageView: UIView!
     @IBOutlet weak var ImageOutlet: UIImageView!
+    
+    @IBOutlet weak var photo1: UIImageView!
+    @IBOutlet weak var photo2: UIImageView!
+    @IBOutlet weak var photo3: UIImageView!
+    
+    var selectedImage = ""
+    
     let colorpicker = UIColorPickerViewController()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,13 +37,6 @@ class ColorPickVC: UIViewController, UIColorPickerViewControllerDelegate, UIGest
         present(colorpicker, animated: true)
     }
     
-    @IBAction func selectimage(_ sender: Any) {
-        let vc = UIImagePickerController()
-        vc.sourceType = .photoLibrary
-        vc.delegate = self
-        vc.allowsEditing = true
-        present(vc, animated: true)
-    }
     func colorPickerViewControllerDidSelectColor(_ viewController: UIColorPickerViewController){
         let color = viewController.selectedColor
         ImageView.backgroundColor = color
@@ -58,16 +58,61 @@ class ColorPickVC: UIViewController, UIColorPickerViewControllerDelegate, UIGest
         self.navigationController?.pushViewController(vc, animated: false)
     }
     
+    @IBAction func photo1Btn(_ sender: Any) {
+        let vc = UIImagePickerController()
+        vc.sourceType = .photoLibrary
+        vc.delegate = self
+        vc.allowsEditing = true
+        selectedImage = SelectedImage.Image1.rawValue
+        present(vc, animated: true)
+    }
+    
+    @IBAction func photo2Btn(_ sender: Any) {
+        let vc = UIImagePickerController()
+        vc.sourceType = .photoLibrary
+        vc.delegate = self
+        vc.allowsEditing = true
+        selectedImage = SelectedImage.Image2.rawValue
+        present(vc, animated: true)
+    }
+    
+    @IBAction func photo3Btn(_ sender: Any) {
+        let vc = UIImagePickerController()
+        vc.sourceType = .photoLibrary
+        vc.delegate = self
+        vc.allowsEditing = true
+        selectedImage = SelectedImage.Image3.rawValue
+        present(vc, animated: true)
+    }
+    @IBAction func saveBtn(_ sender: Any) {
+        let alert3 = UIAlertController(title: "Photo Collage", message: "Saved Successfully", preferredStyle: .alert)
+        let ok3 = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert3.addAction(ok3)
+        self.present(alert3, animated: true, completion: nil)
+        UIImageWriteToSavedPhotosAlbum(self.ImageOutlet.image!, nil, nil, nil)
+    }
+    
 }
 
 extension ColorPickVC:UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")]as? UIImage{
-            ImageOutlet.image = image
-        }
+        if let image = info[UIImagePickerController.InfoKey(rawValue:"UIImagePickerControllerEditedImage")]as? UIImage{
+            let selctedImage = SelectedImage(rawValue: self.selectedImage)
+            switch selctedImage {
+            case .Image1:
+                photo1.image = image
+            case .Image2:
+                photo2.image = image
+            case .Image3:
+                photo3.image = image
+            default:
+               break
+            }
+            }
         picker.dismiss(animated: true, completion: nil)
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
 }
+

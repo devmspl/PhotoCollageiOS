@@ -177,10 +177,12 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CollageView/CollageView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DarkModeKit/DarkModeKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/imglyKit2/imglyKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CollageView/CollageView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DarkModeKit/DarkModeKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/imglyKit2/imglyKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

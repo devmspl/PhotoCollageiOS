@@ -1,20 +1,24 @@
 PODS:
   - CollageView (1.0.4)
+  - DarkModeKit (0.4.0)
   - imglyKit2 (1.3.0)
 
 DEPENDENCIES:
   - CollageView
+  - DarkModeKit
   - imglyKit2
 
 SPEC REPOS:
   trunk:
     - CollageView
+    - DarkModeKit
     - imglyKit2
 
 SPEC CHECKSUMS:
   CollageView: a3a95a1ff964562c71ab0f6d2b3f438abdb24d16
+  DarkModeKit: 26135612cc5abc8bb4f713b5de2d9530c6bef750
   imglyKit2: d27e0c537e449bc30ab362639f87381ad33086ab
 
-PODFILE CHECKSUM: 7760b56d4272fd724060327fac4943f26b2e56c5
+PODFILE CHECKSUM: f1bd5cf58b4a5c6344740b18d75dc4f1ccea1eb0
 
 COCOAPODS: 1.11.3
