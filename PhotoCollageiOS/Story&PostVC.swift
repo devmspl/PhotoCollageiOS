@@ -94,10 +94,11 @@ class storyTableCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewD
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let story = UIStoryboard(name: "Main", bundle: nil)
-        let vc = story.instantiateViewController(withIdentifier: "CollageVC") as! CollageVC
-        parentViewController?.navigationController?.pushViewController(vc, animated: true)
-        
         switch(indexPath.row){
+        
+        case 0:
+            let vc = story.instantiateViewController(withIdentifier: "CollageVC") as! CollageVC
+            parentViewController?.navigationController?.pushViewController(vc, animated: true)
         case 1:
             let vc = story.instantiateViewController(withIdentifier: "CollageVC2") as! CollageVC2
             parentViewController?.navigationController?.pushViewController(vc, animated: true)
