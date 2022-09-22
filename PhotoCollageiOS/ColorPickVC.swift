@@ -9,7 +9,6 @@ import UIKit
 
 class ColorPickVC: UIViewController, UIColorPickerViewControllerDelegate, UIGestureRecognizerDelegate{
     @IBOutlet weak var ImageView: UIView!
-    @IBOutlet weak var ImageOutlet: UIImageView!
     
     @IBOutlet weak var photo1: UIImageView!
     @IBOutlet weak var photo2: UIImageView!
@@ -84,12 +83,10 @@ class ColorPickVC: UIViewController, UIColorPickerViewControllerDelegate, UIGest
         selectedImage = SelectedImage.Image3.rawValue
         present(vc, animated: true)
     }
-    @IBAction func saveBtn(_ sender: Any) {
-        let alert3 = UIAlertController(title: "Photo Collage", message: "Saved Successfully", preferredStyle: .alert)
-        let ok3 = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        alert3.addAction(ok3)
-        self.present(alert3, animated: true, completion: nil)
-        UIImageWriteToSavedPhotosAlbum(self.ImageOutlet.image!, nil, nil, nil)
+    @IBAction func nextBtn(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "TestVC") as! TestVC
+        vc.imf = UIImage.init(view: ImageView)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

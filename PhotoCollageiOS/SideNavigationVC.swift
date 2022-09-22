@@ -12,7 +12,6 @@ class SideNavigationVC: UIViewController {
     @IBOutlet weak var SideNavigationMainView: UITableView!
     
     let sideoptions = ["Login", "Support", "Leave Rating", "Terms of service", "Privacy Policy", "Licenses"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -56,10 +55,20 @@ extension SideNavigationVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
            return 50
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.alert(message: "Functionality not developed yet")
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        self.alert(message: "Functionality not developed yet")
+//    }
+      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch(indexPath.row){
+        case 1:
+            let vc = storyboard?.instantiateViewController(withIdentifier: "SupportVC") as! SupportVC
+            vc.modalPresentationStyle = .fullScreen
+            let navigation = UINavigationController(rootViewController: vc)
+            self.present(navigation, animated: true, completion: nil)
+        default:
+            print("Support")
+        }
     }
-    
 }
 
 class NavigationCell: UITableViewCell{
