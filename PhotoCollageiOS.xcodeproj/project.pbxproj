@@ -10,6 +10,7 @@
 		00724B47B6C92F54565715B5 /* Pods_PhotoCollageiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2D9DE6076F51BA04E98884 /* Pods_PhotoCollageiOSTests.framework */; };
 		28436B5C28DC3D8400CE671D /* SupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28436B5B28DC3D8400CE671D /* SupportVC.swift */; };
 		287D6D3428D5939800085A9F /* StoriesVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D6D3328D5939700085A9F /* StoriesVC2.swift */; };
+		2893A39E28DD8D86007FC2D1 /* SideMenuControllerrr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893A39D28DD8D86007FC2D1 /* SideMenuControllerrr.swift */; };
 		28AAF3AB28D4494E00B43EBF /* Story&PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF3AA28D4494E00B43EBF /* Story&PostVC.swift */; };
 		5CA7124DBE34700AE9F5DE18 /* Pods_PhotoCollageiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9620DC7F19C0EA01884098B7 /* Pods_PhotoCollageiOS.framework */; };
 		7669798228D1FA20008E7A14 /* Project1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669798128D1FA20008E7A14 /* Project1VC.swift */; };
@@ -76,6 +77,7 @@
 		1A2D9DE6076F51BA04E98884 /* Pods_PhotoCollageiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoCollageiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28436B5B28DC3D8400CE671D /* SupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVC.swift; sourceTree = "<group>"; };
 		287D6D3328D5939700085A9F /* StoriesVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesVC2.swift; sourceTree = "<group>"; };
+		2893A39D28DD8D86007FC2D1 /* SideMenuControllerrr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuControllerrr.swift; sourceTree = "<group>"; };
 		28AAF3AA28D4494E00B43EBF /* Story&PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Story&PostVC.swift"; sourceTree = "<group>"; };
 		2A5DBC16152352817D8D85B8 /* Pods-PhotoCollageiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollageiOSTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoCollageiOSTests/Pods-PhotoCollageiOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		382D2EB0108E127752DE13FF /* Pods-PhotoCollageiOS-PhotoCollageiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollageiOS-PhotoCollageiOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoCollageiOS-PhotoCollageiOSUITests/Pods-PhotoCollageiOS-PhotoCollageiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				FAB8AD9828B0AF8400E44B8A /* ViewController.swift */,
 				FA288EFF28CB648700E6043E /* TabbarVC.swift */,
 				FAB8AD9A28B0AF8400E44B8A /* Main.storyboard */,
+				2893A39D28DD8D86007FC2D1 /* SideMenuControllerrr.swift */,
 				28436B5B28DC3D8400CE671D /* SupportVC.swift */,
 				287D6D3328D5939700085A9F /* StoriesVC2.swift */,
 				28AAF3AA28D4494E00B43EBF /* Story&PostVC.swift */,
@@ -511,6 +514,7 @@
 				FAB4B45828D0B5D900868B64 /* CreatorBottomSheetVC.swift in Sources */,
 				FAB8ADC528B0D3DD00E44B8A /* FirstScreen.swift in Sources */,
 				FA2C0FBF28C62D4E0004880A /* CollageVC2.swift in Sources */,
+				2893A39E28DD8D86007FC2D1 /* SideMenuControllerrr.swift in Sources */,
 				FA288F0028CB648700E6043E /* TabbarVC.swift in Sources */,
 				FA2C0FBD28C628950004880A /* CollageVC3.swift in Sources */,
 				FA73680928B1007700F88777 /* ThirdScreen.swift in Sources */,

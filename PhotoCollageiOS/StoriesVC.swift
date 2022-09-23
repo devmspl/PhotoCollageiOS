@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SideMenuSwift
 
 class StoriesVC: UIViewController,UIGestureRecognizerDelegate {
     @IBOutlet weak var MainCollectionView: UICollectionView!
@@ -26,8 +27,9 @@ class StoriesVC: UIViewController,UIGestureRecognizerDelegate {
         }
     
     @IBAction func OptionBtn(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "SideNavigationVC") as! SideNavigationVC
-        self.present(vc, animated: true, completion: nil)
+        sideMenuController?.revealMenu()
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "SideNavigationVC") as! SideNavigationVC
+//        self.present(vc, animated: true, completion: nil)
     }
     @IBAction func PostBtn(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "PostVC") as! PostVC

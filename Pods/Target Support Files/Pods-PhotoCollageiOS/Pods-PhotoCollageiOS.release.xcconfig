@@ -1,11 +1,11 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CollageView" "${PODS_CONFIGURATION_BUILD_DIR}/DarkModeKit" "${PODS_CONFIGURATION_BUILD_DIR}/imglyKit2"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CollageView" "${PODS_CONFIGURATION_BUILD_DIR}/DarkModeKit" "${PODS_CONFIGURATION_BUILD_DIR}/SideMenuSwift" "${PODS_CONFIGURATION_BUILD_DIR}/imglyKit2"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CollageView/CollageView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/DarkModeKit/DarkModeKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/imglyKit2/imglyKit.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CollageView/CollageView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/DarkModeKit/DarkModeKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SideMenuSwift/SideMenuSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/imglyKit2/imglyKit.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) /usr/lib/swift '@executable_path/Frameworks' '@loader_path/Frameworks'
 LIBRARY_SEARCH_PATHS = $(inherited) "${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
-OTHER_LDFLAGS = $(inherited) -framework "AVFoundation" -framework "Accelerate" -framework "CollageView" -framework "CoreGraphics" -framework "CoreImage" -framework "CoreMotion" -framework "CoreText" -framework "DarkModeKit" -framework "Foundation" -framework "GLKit" -framework "MobileCoreServices" -framework "OpenGLES" -framework "Photos" -framework "UIKit" -framework "imglyKit"
+OTHER_LDFLAGS = $(inherited) -framework "AVFoundation" -framework "Accelerate" -framework "CollageView" -framework "CoreGraphics" -framework "CoreImage" -framework "CoreMotion" -framework "CoreText" -framework "DarkModeKit" -framework "Foundation" -framework "GLKit" -framework "MobileCoreServices" -framework "OpenGLES" -framework "Photos" -framework "SideMenuSwift" -framework "UIKit" -framework "imglyKit"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

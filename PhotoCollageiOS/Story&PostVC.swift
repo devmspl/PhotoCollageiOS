@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SideMenuSwift
 
 class Story_PostVC: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource {
    
@@ -48,8 +49,9 @@ class Story_PostVC: UIViewController, UICollectionViewDelegate,UICollectionViewD
         return 300
     }
     @IBAction func OPTIONBTN(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "SideNavigationVC") as! SideNavigationVC
-        self.present(vc, animated: true)
+        sideMenuController?.revealMenu()
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "SideNavigationVC") as! SideNavigationVC
+//        self.present(vc, animated: true)
     }
     @IBAction func trialBtn(_ sender: Any) {
         let vc2 = storyboard?.instantiateViewController(withIdentifier: "PaymentVC") as! PaymentVC

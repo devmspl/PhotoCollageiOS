@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-PhotoCollageiOS/Pods-PhotoCollageiOS-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/CollageView/CollageView.framework
 ${BUILT_PRODUCTS_DIR}/DarkModeKit/DarkModeKit.framework
+${BUILT_PRODUCTS_DIR}/SideMenuSwift/SideMenuSwift.framework
 ${BUILT_PRODUCTS_DIR}/imglyKit2/imglyKit.framework

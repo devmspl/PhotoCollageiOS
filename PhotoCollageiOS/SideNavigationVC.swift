@@ -7,14 +7,17 @@
 
 import UIKit
 import DarkModeKit
+import SideMenuSwift
 
-class SideNavigationVC: UIViewController {
+class SideNavigationVC: UIViewController,SideMenuControllerDelegate {
     @IBOutlet weak var SideNavigationMainView: UITableView!
     
+    @IBOutlet weak var sidemenuWidth: NSLayoutConstraint!
     let sideoptions = ["Login", "Support", "Leave Rating", "Terms of service", "Privacy Policy", "Licenses"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        sidemenuWidth.constant = SideMenuController.preferences.basic.menuWidth - view.frame.width
+        sideMenuController?.delegate = self
     }
     @IBAction func crossBtn(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -62,14 +65,16 @@ extension SideNavigationVC: UITableViewDelegate,UITableViewDataSource{
         switch(indexPath.row){
         case 1:
             let vc = storyboard?.instantiateViewController(withIdentifier: "SupportVC") as! SupportVC
-            vc.modalPresentationStyle = .fullScreen
-            let navigation = UINavigationController(rootViewController: vc)
-            self.present(navigation, animated: true, completion: nil)
+//            vc.modalPresentationStyle = .fullScreen
+//            let navigation = UINavigationController(rootViewController: vc)
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             print("Support")
         }
     }
 }
+
+
 
 class NavigationCell: UITableViewCell{
     @IBOutlet weak var SideList: UILabel!
