@@ -1,5 +1,9 @@
 ${PODS_ROOT}/Target Support Files/Pods-PhotoCollageiOS-PhotoCollageiOSUITests/Pods-PhotoCollageiOS-PhotoCollageiOSUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/CollageView/CollageView.framework
+${BUILT_PRODUCTS_DIR}/CollapseTableView/CollapseTableView.framework
 ${BUILT_PRODUCTS_DIR}/DarkModeKit/DarkModeKit.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework
 ${BUILT_PRODUCTS_DIR}/SideMenuSwift/SideMenuSwift.framework
 ${BUILT_PRODUCTS_DIR}/imglyKit2/imglyKit.framework

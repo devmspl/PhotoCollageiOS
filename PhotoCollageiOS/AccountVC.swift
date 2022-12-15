@@ -44,8 +44,9 @@ class AccountVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataS
         self.present(vc, animated: true)
     }
     @IBAction func optionBtn(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "SideNavigationVC") as! SideNavigationVC
-        self.present(vc, animated: true, completion: nil)
+        sideMenuController?.revealMenu()
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "SideNavigationVC") as! SideNavigationVC
+//        self.present(vc, animated: true, completion: nil)
     }
     
 }

@@ -83,6 +83,7 @@ class ColorPickVC: UIViewController, UIColorPickerViewControllerDelegate, UIGest
         selectedImage = SelectedImage.Image3.rawValue
         present(vc, animated: true)
     }
+    
     @IBAction func nextBtn(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "TestVC") as! TestVC
         vc.imf = UIImage.init(view: ImageView)

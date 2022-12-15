@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		00724B47B6C92F54565715B5 /* Pods_PhotoCollageiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2D9DE6076F51BA04E98884 /* Pods_PhotoCollageiOSTests.framework */; };
+		282E1AB828EC15410023E78F /* ExpandVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E1AB728EC15410023E78F /* ExpandVC.swift */; };
 		28436B5C28DC3D8400CE671D /* SupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28436B5B28DC3D8400CE671D /* SupportVC.swift */; };
+		286677DF28E6B8450070439A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286677DE28E6B8450070439A /* ViewController.swift */; };
 		287D6D3428D5939800085A9F /* StoriesVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D6D3328D5939700085A9F /* StoriesVC2.swift */; };
 		2893A39E28DD8D86007FC2D1 /* SideMenuControllerrr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893A39D28DD8D86007FC2D1 /* SideMenuControllerrr.swift */; };
+		289D5E8D28F426D400F62AB8 /* ApiURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289D5E8C28F426D400F62AB8 /* ApiURL.swift */; };
 		28AAF3AB28D4494E00B43EBF /* Story&PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF3AA28D4494E00B43EBF /* Story&PostVC.swift */; };
+		28B95A1328F555A80015763B /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B95A1228F555A80015763B /* CreateAccountVC.swift */; };
 		5CA7124DBE34700AE9F5DE18 /* Pods_PhotoCollageiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9620DC7F19C0EA01884098B7 /* Pods_PhotoCollageiOS.framework */; };
 		7669798228D1FA20008E7A14 /* Project1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669798128D1FA20008E7A14 /* Project1VC.swift */; };
 		7669798428D2057A008E7A14 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669798328D2057A008E7A14 /* SignUpVC.swift */; };
@@ -43,7 +47,6 @@
 		FAB4B45828D0B5D900868B64 /* CreatorBottomSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4B45728D0B5D800868B64 /* CreatorBottomSheetVC.swift */; };
 		FAB8AD9528B0AF8400E44B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8AD9428B0AF8400E44B8A /* AppDelegate.swift */; };
 		FAB8AD9728B0AF8400E44B8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8AD9628B0AF8400E44B8A /* SceneDelegate.swift */; };
-		FAB8AD9928B0AF8400E44B8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8AD9828B0AF8400E44B8A /* ViewController.swift */; };
 		FAB8AD9C28B0AF8400E44B8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB8AD9A28B0AF8400E44B8A /* Main.storyboard */; };
 		FAB8AD9E28B0AF8600E44B8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB8AD9D28B0AF8600E44B8A /* Assets.xcassets */; };
 		FAB8ADA128B0AF8600E44B8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB8AD9F28B0AF8600E44B8A /* LaunchScreen.storyboard */; };
@@ -53,7 +56,6 @@
 		FAB8ADC528B0D3DD00E44B8A /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8ADC428B0D3DD00E44B8A /* FirstScreen.swift */; };
 		FAB8ADC728B0D59600E44B8A /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8ADC628B0D59600E44B8A /* SecondScreen.swift */; };
 		FAC2F01728CB05270070CD3E /* FavouriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2F01628CB05270070CD3E /* FavouriteVC.swift */; };
-		FAC491A928B8AA9D00336F15 /* StoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC491A828B8AA9D00336F15 /* StoriesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,10 +77,14 @@
 
 /* Begin PBXFileReference section */
 		1A2D9DE6076F51BA04E98884 /* Pods_PhotoCollageiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoCollageiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		282E1AB728EC15410023E78F /* ExpandVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandVC.swift; sourceTree = "<group>"; };
 		28436B5B28DC3D8400CE671D /* SupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVC.swift; sourceTree = "<group>"; };
+		286677DE28E6B8450070439A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		287D6D3328D5939700085A9F /* StoriesVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesVC2.swift; sourceTree = "<group>"; };
 		2893A39D28DD8D86007FC2D1 /* SideMenuControllerrr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuControllerrr.swift; sourceTree = "<group>"; };
+		289D5E8C28F426D400F62AB8 /* ApiURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiURL.swift; sourceTree = "<group>"; };
 		28AAF3AA28D4494E00B43EBF /* Story&PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Story&PostVC.swift"; sourceTree = "<group>"; };
+		28B95A1228F555A80015763B /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		2A5DBC16152352817D8D85B8 /* Pods-PhotoCollageiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollageiOSTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoCollageiOSTests/Pods-PhotoCollageiOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		382D2EB0108E127752DE13FF /* Pods-PhotoCollageiOS-PhotoCollageiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollageiOS-PhotoCollageiOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoCollageiOS-PhotoCollageiOSUITests/Pods-PhotoCollageiOS-PhotoCollageiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B60C9A05B297AC56B39FD30 /* Pods-PhotoCollageiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoCollageiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoCollageiOSTests/Pods-PhotoCollageiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,7 +123,6 @@
 		FAB8AD9128B0AF8400E44B8A /* PhotoCollageiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoCollageiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB8AD9428B0AF8400E44B8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB8AD9628B0AF8400E44B8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAB8AD9828B0AF8400E44B8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAB8AD9B28B0AF8400E44B8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAB8AD9D28B0AF8600E44B8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB8ADA028B0AF8600E44B8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -130,7 +135,6 @@
 		FAB8ADC428B0D3DD00E44B8A /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		FAB8ADC628B0D59600E44B8A /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 		FAC2F01628CB05270070CD3E /* FavouriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVC.swift; sourceTree = "<group>"; };
-		FAC491A828B8AA9D00336F15 /* StoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		289D5E8B28F4267400F62AB8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				289D5E8C28F426D400F62AB8 /* ApiURL.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		9580904C692519348163275E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,11 +221,14 @@
 		FAB8AD9328B0AF8400E44B8A /* PhotoCollageiOS */ = {
 			isa = PBXGroup;
 			children = (
+				289D5E8B28F4267400F62AB8 /* Services */,
 				FAB8AD9428B0AF8400E44B8A /* AppDelegate.swift */,
 				FAB8AD9628B0AF8400E44B8A /* SceneDelegate.swift */,
-				FAB8AD9828B0AF8400E44B8A /* ViewController.swift */,
 				FA288EFF28CB648700E6043E /* TabbarVC.swift */,
 				FAB8AD9A28B0AF8400E44B8A /* Main.storyboard */,
+				28B95A1228F555A80015763B /* CreateAccountVC.swift */,
+				282E1AB728EC15410023E78F /* ExpandVC.swift */,
+				286677DE28E6B8450070439A /* ViewController.swift */,
 				2893A39D28DD8D86007FC2D1 /* SideMenuControllerrr.swift */,
 				28436B5B28DC3D8400CE671D /* SupportVC.swift */,
 				287D6D3328D5939700085A9F /* StoriesVC2.swift */,
@@ -241,7 +256,6 @@
 				FA4887B328BDDCD200A73BC0 /* PublishVC.swift */,
 				FA39DB6628BCE61200F281BA /* BottomSheetVC.swift */,
 				FA30088A28BCC5E900997047 /* PaymentVC.swift */,
-				FAC491A828B8AA9D00336F15 /* StoriesVC.swift */,
 				FA73680A28B100A700F88777 /* ProfileVC.swift */,
 				FA73680828B1007700F88777 /* ThirdScreen.swift */,
 				FAB8ADC628B0D59600E44B8A /* SecondScreen.swift */,
@@ -519,20 +533,22 @@
 				FA2C0FBD28C628950004880A /* CollageVC3.swift in Sources */,
 				FA73680928B1007700F88777 /* ThirdScreen.swift in Sources */,
 				FA73680B28B100A700F88777 /* ProfileVC.swift in Sources */,
+				289D5E8D28F426D400F62AB8 /* ApiURL.swift in Sources */,
 				FA80F9A928C8B91C0025BD29 /* TestVC.swift in Sources */,
-				FAB8AD9928B0AF8400E44B8A /* ViewController.swift in Sources */,
 				FA97DE3F28CB038900C978C7 /* PlanVC.swift in Sources */,
 				28AAF3AB28D4494E00B43EBF /* Story&PostVC.swift in Sources */,
 				FA5559CC28C2147A00F0653D /* EditPhotoAndVideoVC.swift in Sources */,
+				282E1AB828EC15410023E78F /* ExpandVC.swift in Sources */,
 				FAB1AF6128C5FD9A002DD377 /* ViewController1.swift in Sources */,
 				7669798228D1FA20008E7A14 /* Project1VC.swift in Sources */,
 				FA30088B28BCC5E900997047 /* PaymentVC.swift in Sources */,
 				FA97DE3B28CB02B400C978C7 /* ProjectVC.swift in Sources */,
+				28B95A1328F555A80015763B /* CreateAccountVC.swift in Sources */,
 				FAB1AF5F28C5DBCB002DD377 /* PostVC.swift in Sources */,
-				FAC491A928B8AA9D00336F15 /* StoriesVC.swift in Sources */,
 				FAB8AD9528B0AF8400E44B8A /* AppDelegate.swift in Sources */,
 				287D6D3428D5939800085A9F /* StoriesVC2.swift in Sources */,
 				FAB4B45428D056BD00868B64 /* LoginVC.swift in Sources */,
+				286677DF28E6B8450070439A /* ViewController.swift in Sources */,
 				FA5559CA28C1EBB100F0653D /* MyApp.swift in Sources */,
 				FA003E1928C71D93003EF845 /* CollageVC4.swift in Sources */,
 				FA32761928BF6A1100138A52 /* SideNavigationVC.swift in Sources */,
@@ -727,10 +743,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8XR9GPSS6Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoCollageiOS/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to access to take photo";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need to access microphone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please Allow Access";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -740,7 +759,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.PhotoCollageiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -756,10 +775,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8XR9GPSS6Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoCollageiOS/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to access to take photo";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need to access microphone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please Allow Access";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -769,7 +791,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.PhotoCollageiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

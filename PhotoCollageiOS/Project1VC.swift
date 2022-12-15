@@ -37,8 +37,9 @@ class Project1VC: UIViewController,UICollectionViewDelegate,UICollectionViewData
     }
     
     @IBAction func optionBtn(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "SideNavigationVC") as! SideNavigationVC
-        self.present(vc, animated: true)
+        sideMenuController?.revealMenu()
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "SideNavigationVC") as! SideNavigationVC
+//        self.present(vc, animated: true)
     }
     
 }

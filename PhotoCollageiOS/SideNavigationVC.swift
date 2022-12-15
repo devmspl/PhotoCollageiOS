@@ -65,16 +65,19 @@ extension SideNavigationVC: UITableViewDelegate,UITableViewDataSource{
         switch(indexPath.row){
         case 1:
             let vc = storyboard?.instantiateViewController(withIdentifier: "SupportVC") as! SupportVC
-//            vc.modalPresentationStyle = .fullScreen
-//            let navigation = UINavigationController(rootViewController: vc)
-            self.navigationController?.pushViewController(vc, animated: true)
+            vc.modalPresentationStyle = .fullScreen
+            //let navigation = UINavigationController(rootViewController: vc)
+            self.present(vc, animated: true, completion: nil)
+//            self.navigationController?.pushViewController(vc, animated: true)
+        case 0:
+            let vc2 = storyboard?.instantiateViewController(withIdentifier: "CreateBioVC") as! CreateBioVC
+            vc2.modalPresentationStyle = .fullScreen
+            self.present(vc2, animated: true, completion: nil)
         default:
             print("Support")
         }
     }
 }
-
-
 
 class NavigationCell: UITableViewCell{
     @IBOutlet weak var SideList: UILabel!

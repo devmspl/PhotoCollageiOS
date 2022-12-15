@@ -124,7 +124,6 @@ class storyCollectionCell: UICollectionViewCell{
     @IBOutlet weak var secondCellPhotos: UIImageView!
 }
 
-
 extension UIView {
     var parentViewController: UIViewController? {
         var parentResponder: UIResponder? = self
@@ -137,3 +136,4 @@ extension UIView {
         return nil
     }
 }
+

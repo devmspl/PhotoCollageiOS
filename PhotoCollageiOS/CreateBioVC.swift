@@ -47,8 +47,7 @@ class CreateBioVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
         self.present(vc, animated: true)
     }
     @IBAction func optionBtn(_ sender: Any) {
-        let vc2 = storyboard?.instantiateViewController(withIdentifier: "SideNavigationVC") as! SideNavigationVC
-        self.present(vc2, animated: true)
+        sideMenuController?.revealMenu()
     }
     
 }

@@ -11,6 +11,8 @@ enum SelectedImage: String{
     case Image1
     case Image2
     case Image3
+    case Image4
+    case Image5
 }
 
 class CollageVC2: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {

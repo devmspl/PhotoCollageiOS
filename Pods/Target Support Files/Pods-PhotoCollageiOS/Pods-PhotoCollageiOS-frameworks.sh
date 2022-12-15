@@ -176,14 +176,22 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CollageView/CollageView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CollapseTableView/CollapseTableView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DarkModeKit/DarkModeKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SideMenuSwift/SideMenuSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/imglyKit2/imglyKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CollageView/CollageView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CollapseTableView/CollapseTableView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DarkModeKit/DarkModeKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SideMenuSwift/SideMenuSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/imglyKit2/imglyKit.framework"
 fi

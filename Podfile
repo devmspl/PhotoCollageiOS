@@ -10,6 +10,10 @@ target 'PhotoCollageiOS' do
          pod 'CollageView'
          pod "DarkModeKit"
          pod 'SideMenuSwift'
+         pod 'CollapseTableView'
+         pod 'Alamofire'
+         pod 'ProgressHUD'
+         pod 'IQKeyboardManagerSwift'
 
   target 'PhotoCollageiOSTests' do
     inherit! :search_paths
